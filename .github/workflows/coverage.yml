@@ -53,10 +53,12 @@ jobs:
       # Run coverage #
       ################
       - name: Run coverage
-        run: coverage run -m unittest discover -b -s tests
+        run: |
+          coverage run -m unittest discover -b -s tests
+          coverage json
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v1.1.2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          path-to-lcov: "./.coverage"
+          path-to-lcov: "./coverage.json"
