@@ -43,8 +43,8 @@ jobs:
       ############################
       - name: Setup python 3.9
         uses: actions/setup-python@v2
-          with:
-            python-version: '3.9.1' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+        with:
+          python-version: '3.9.1' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       - run: |
           pip install -r requirements.txt
           pip install coverage
@@ -53,9 +53,9 @@ jobs:
       # Run coverage #
       ################
       - name: Run coverage
-      run: coverage run -m unittest dicover -b -s tests
+        run: coverage run -m unittest dicover -b -s tests
 
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@v1.1.2
-          with:
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
