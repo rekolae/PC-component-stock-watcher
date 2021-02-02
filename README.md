@@ -1,5 +1,8 @@
 # PC-component-stock-watcher
 
+[![GitHub Super-Linter](https://github.com/rekolae/PC-component-stock-watcher/workflows/Linter/badge.svg?branch=master)](https://github.com/marketplace/actions/super-linter)
+[![Coverage Status](https://coveralls.io/repos/github/rekolae/PC-component-stock-watcher/badge.svg?branch=master)](https://coveralls.io/github/rekolae/PC-component-stock-watcher?branch=master)
+
 Thanks to the combined terror of COVID, scalpers and overall global shortage, especially GPUs are really hard to come by. This program aims to help you find out when there actually is stock only to get to the page and start to cry when the scalper bots have already hogged all of the stock.
 
 Idea for this project was created out of my own frustration as well as interest in trying new things and combining them together.

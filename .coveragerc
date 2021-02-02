@@ -1,0 +1,4 @@
+[run]
+source = pc_component_stock_watcher
+branch = True
+omit = *__main__.py
